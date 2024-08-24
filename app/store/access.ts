@@ -24,10 +24,10 @@ const DEFAULT_ACCESS_STATE = {
   useBRProxy: "False",
 
   // AWS
-  awsAccessKeyId: "",
-  awsSecretAccessKey: "",
+  awsAccessKeyId: process.env.AWS_ACCESS_KEY,
+  awsSecretAccessKey: process.env.AWS_SECRET_KEY,
   awsSessionToken: "",
-  awsRegion: "",
+  awsRegion: process.env.AWS_REGION,
   awsCognitoUser: false,
   BRProxyUrl: "",
 
